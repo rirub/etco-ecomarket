@@ -1,14 +1,16 @@
 import React from 'react';
 import './App.css';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import SigninSample from "./samples/SigninSample";
+import SignIn from "./samples/SignIn";
+import SignUp from "./samples/SignUp";
 import logo from './logo.svg';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-          <Route path="/samples/signin" element={<SigninSample />}></Route>
+          <Route path="/samples/SignIn" element={<SignIn />}></Route>
+          <Route path="/samples/SignUp" element={<SignUp />}></Route>
       </Routes>
 
     </BrowserRouter>

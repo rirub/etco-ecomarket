@@ -9,7 +9,7 @@ const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         password: data.get('password'),
     });
 }
-    const LogIn = () => {
+    const SignIn = () => {
         return (
             <div>
             <Box
@@ -126,4 +126,4 @@ const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         );
     };
 
-export default LogIn;
+export default SignIn;
