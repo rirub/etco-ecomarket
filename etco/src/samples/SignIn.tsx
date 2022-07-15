@@ -12,9 +12,10 @@ const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     const SignIn = () => {
         return (
             <div>
+
             <Box
                 sx={{
-                    marginTop: 8,
+
                     display: 'flex',
                     flexDirection: 'column',
                     alignItems: 'center',
@@ -50,28 +51,30 @@ const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
                         control={<Checkbox value="remember" color="primary"/>}
                         label="Remember me"
                     />
-
-                    <Button id="버튼_오브젝트_텍스트-로그인_">
+                </Box>
+                <Box>
+                    <Button id="버튼_오브젝트_텍스트-로그인_" >
                     <svg id="버튼_오브젝트_텍스트-로그인_" data-name="버튼 오브젝트(텍스트-로그인)" xmlns="http://www.w3.org/2000/svg" width="400.5" height="61" viewBox="0 0 400.5 61">
                         <g id="버튼_오브젝트_1d594d_" data-name="버튼 오브젝트(1d594d)">
-                        <rect id="사각형_24" data-name="사각형 24" width="400.5" height="61" fill="#1d594d"/>
+                        <rect id="사각형_24" data-name="사각형 24" width="600" height="61" fill="#1d594d"/>
                         </g>
                         <text id="로그인" transform="translate(200.25 35.592)" fill="#fff" fontSize="16.854" fontFamily="Pretendard-Regular, Pretendard"><tspan x="-21" y="0">로그인</tspan></text>
                     </svg>
                     </Button>
-
+                </Box>
                     <Grid container>
                         <Grid item xs>
                             <Link href="#" variant="body2">
-                                Forgot password?
+                                아이디 비밀번호 찾기
                             </Link>
                         </Grid>
                         <Grid item>
                             <Link href="#" variant="body2">
-                                {"Don't have an account? Sign Up"}
+                                {"회원가입"}
                             </Link>
                         </Grid>
                     </Grid>
+
                     <Box sx={{alignItems: 'center'}}>
                         <Button id="그룹23" >
                             <svg id="그룹23" xmlns="http://www.w3.org/2000/svg" width="47.165" height="47.165" viewBox="0 0 47.165 47.165">
@@ -121,7 +124,7 @@ const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
                         </Button>
                     </Box>
                 </Box>
-            </Box>
+
             </div>
         );
     };
