@@ -132,9 +132,33 @@ const SignUp = () => {
                         </Button>
                     </Box>
                 </Box>
+                    <strong>이메일 입력</strong>
+                    <Box
+                        sx={{
+                            display: 'flex',
+                            flexDirection: 'row',
+                            alignItems: 'center',
+                        }}>
 
+                        <TextField
+                            margin="normal"
+                            required
+                            fullWidth
+                            name="email-input"
+                            label=""
+                            type="email-input"
+                            id="email-input"
+                            autoComplete="email-input"
+                        />
+                        @
+                        <select id="list" title="연결하실 부서를 선택하세요.">
+                            <option value="">직접 선택</option>
+                            <option value="1">naver.com</option>
+                            <option value="2">gmail.com</option>
+                            <option value="3">daum.net</option>
+                        </select>
 
-
+                    </Box>
 
 
                     <Box>
